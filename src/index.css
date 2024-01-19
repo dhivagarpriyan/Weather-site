@@ -1,0 +1,100 @@
+:root{
+  --section-overlay:rgba(0,0,0,0.7);
+  --background-overlay:rgba(0,0,0,0.2);
+}
+
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.app{
+  width:100%;
+  height:100vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.overlay{
+  width:100%;
+  height: 100%;
+  background-color: var(--background-overlay);
+}
+
+.container{
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+  align-items: center;
+}
+
+.section{
+ 
+ padding: 2rem;
+ color:white;
+ margin-bottom: 0.5rem;
+ margin-top: 0.3rem;
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
+}
+
+.section_inputs,.section_temperature{
+   width: 100%;
+   background-color: var(--section-overlay);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 0.4rem;
+}
+
+.section_inputs>input{
+  border: 1px solid white;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+}
+
+.section_inputs>input:focus{
+  outline: none;
+}
+
+.section_inputs>button{
+  border: none;
+  border-radius: 0.2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+}
+
+.section_inputs>button:hover{
+  background-color: gray;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.temperature{
+  font-size: 3rem;
+}
+
+@media screen {
+  
+} 
